@@ -13,7 +13,10 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 from ctypes import cast
 from pathlib import Path
 import os
+<<<<<<< HEAD
 from decouple import config
+=======
+>>>>>>> 6a4165317a1b4e71defef16f8152a6a369c5b54f
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -131,9 +134,12 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     'static'
 ]
+<<<<<<< HEAD
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = BASE_DIR /'media'
+=======
+>>>>>>> 6a4165317a1b4e71defef16f8152a6a369c5b54f
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field

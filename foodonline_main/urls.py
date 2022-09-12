@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from . import views
 
 from foodonline_main import settings
 from . import views
@@ -23,4 +24,8 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("", views.home, name="home")
+<<<<<<< HEAD
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+=======
+]
+>>>>>>> 6a4165317a1b4e71defef16f8152a6a369c5b54f
