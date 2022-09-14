@@ -6,15 +6,14 @@ from django.dispatch import receiver
 def post_save_create_profile_receiver(sender, instance, created, **kwargs):
     if created:
         UserProfile.objects.create(user=instance)
-        print("user profile created")
     else: 
+        # user profile created if object does not exists
         try:
             user_profile = UserProfile.objects.get(user=instance)
             user_profile.save()
         except: 
             UserProfile.objects.create(user=instance)
-            print("user profile created if object does not exists")
-        print("user profile updated")
+            
 
 
 
