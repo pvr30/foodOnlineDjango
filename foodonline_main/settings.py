@@ -34,7 +34,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 CREATED_APPS = [
-    'accounts'
+    'accounts',
+    'vendor'
 ]
 
 INSTALLED_APPS = [
